@@ -19,3 +19,14 @@ while( oddNums.length < [10] ){
 }
 
 console.log(oddNums)
+
+// BONUS
+
+let shufflebtn = document.getElementById("shuffleBtn")
+shufflebtn.addEventListener("click",
+    function shuffledOddNums()  {
+        let sortedNums = oddNums.sort((a, b) => 0.5 - Math.random());
+        console.log(sortedNums)
+    }
+)
+
